@@ -1,0 +1,16 @@
+@import "../../common/colors.scss";
+
+.header-message-container {
+  height: 5rem;
+  background-color: $base-green;
+  padding: 1rem 2rem;
+  p {
+    text-align: center;
+    margin: 0;
+    font-size: 1.3rem;
+    color: $base-white;
+    font-family: "Kameron", serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
