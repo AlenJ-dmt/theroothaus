@@ -4,12 +4,13 @@
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: $base-dark-green;
+  background-color: transparent;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: thin solid rgba(255, 255, 255, 0.25);
+  // border-bottom: thin solid rgba(255, 255, 255, 0.25);
+  z-index: 5;
 
   .ham-container {
     width: 12rem;
@@ -36,14 +37,14 @@
       width: 50%;
       height: 1px;
       margin-bottom: 7px;
-      background-color: $base-white;
+      background-color: $base-dark-green;
     }
     &::after {
       content: "";
       width: 50%;
       height: 1px;
       margin-top: 7px;
-      background-color: $base-white;
+      background-color: $base-dark-green;
     }
   }
   .icons-container {
@@ -56,7 +57,7 @@
   .ham {
     width: 50%;
     height: 1px;
-    background-color: $base-white;
+    background-color: $base-dark-green;
   }
   img {
     height: 29px;
