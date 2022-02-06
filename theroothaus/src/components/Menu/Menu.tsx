@@ -4,17 +4,21 @@ import { GrPinterest } from "react-icons/gr";
 import { IoLogoTiktok } from "react-icons/io5";
 import { colors } from "../../constants/colors";
 import * as React from "react";
+import { Link } from "react-router-dom"
+import { BsChevronDoubleDown } from "react-icons/bs"
+import { SubMenu } from "../SubMenu/SubMenu"
+import { useState } from "react"
 
 interface IMenuProps {
   isMenuOpen: boolean;
+  showCategories: boolean;
+  setShowCategories: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Menu: React.FC<IMenuProps> = (props) => {
-  const { isMenuOpen } = props;
+const Menu: React.FC<IMenuProps> = ({isMenuOpen, showCategories, setShowCategories }) => {
   const menu = document.getElementsByClassName("nav-menu")[0];
 
   React.useEffect(() => {
-    console.log("ping");
     if (!!menu) {
       if (isMenuOpen) {
         menu.classList.add("slide-right");
@@ -26,23 +30,36 @@ const Menu: React.FC<IMenuProps> = (props) => {
     }
   }, [isMenuOpen]);
 
+  const links = ["Succulents", "Peperomia", "Philodendron",
+    "Hoya", "Alocasia", "Calathea", "Anthurium", "Syngonium"
+  ]
+
   return (
     <div className="nav-menu">
       <ul>
-        <li>Home</li>
-        <li>Catalog</li>
-        <li>Propagation Supplies</li>
-        <li>Low light plants</li>
-        <li>Medium / bright indirect light plants</li>
-        <li>Full sun / direct light plants</li>
-        <li>Plants With Free Shipping</li>
+        <div className="menu-link">
+          <Link to="/catalog">Home</Link>
+        </div>
+        <div className="menu-link">
+          <Link to="/catalog">Shop All</Link>
+        </div>
+        <SubMenu setOpen={setShowCategories} labels={links} mainLabel="Shop by variety" open={showCategories} />
+        <div className="menu-link">
+          <Link to="/catalog">Plants with free shipping</Link>
+        </div>
+        <div className="menu-link">
+          <Link to="/catalog">Propagation supplies</Link>
+        </div>
+        <div className="menu-link">
+          <Link to="/catalog">Contact us</Link>
+        </div>
       </ul>
       <div className="social-media-links-container">
         <div className="container">
-          <AiFillFacebook size={25} color={colors["base-white"]} />
-          <AiOutlineInstagram size={25} color={colors["base-white"]} />
-          <GrPinterest size={20} color={colors["base-white"]} />
-          <IoLogoTiktok size={20} color={colors["base-white"]} />
+          <AiFillFacebook size={25} color={colors["base-dark-green"]} />
+          <AiOutlineInstagram size={25} color={colors["base-dark-green"]} />
+          <GrPinterest size={20} color={colors["base-dark-green"]} />
+          <IoLogoTiktok size={20} color={colors["base-dark-green"]} />
         </div>
       </div>
     </div>

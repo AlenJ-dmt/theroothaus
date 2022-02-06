@@ -1,0 +1,52 @@
+@import "../../common//colors.scss";
+
+.submenu-container {
+  width: 100%;
+  border-bottom: 1px solid $base-light-beige;
+}
+.main-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $base-light-beige;
+  padding: 1rem 3rem;
+  border-top: 1px solid $base-light-beige;
+  font-size: 1.8rem;
+
+  p {
+    font-size: 1.8rem;
+    color: $base-light-beige;
+  }
+  a {
+    font-size: 1.8rem;
+    color: $base-light-beige;
+    line-height: 5.734rem;
+  }
+}
+
+.rotate-open {
+  -webkit-animation: rotate-once 0.5s ease-in-out 0.5 both;
+  animation: rotate-once 0.5s ease-in-out 0.5 both;
+}
+
+@-webkit-keyframes rotate-once {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate-once {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}

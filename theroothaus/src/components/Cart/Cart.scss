@@ -1,0 +1,38 @@
+@import "../../common/colors.scss";
+
+.cart {
+  width: 90%;
+  right: 0;
+  background-color: $base-light-beige;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: inherit;
+  padding-bottom: 5rem;
+  min-height: calc(100vh - 6rem);
+  height: auto;
+  position: absolute;
+//   transform: translateX(calc(100%));
+  z-index: 100;
+  &-header{
+      display: flex;
+      width: 100%;
+      font-size: 1.8rem;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      color: $base-dar-button;
+      p{
+        color: $base-dar-button;
+      }
+  }
+  &-container{
+      display: flex;
+      height: auto;
+      min-height: 50vh;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      color: $base-dar-button;
+  }
+}

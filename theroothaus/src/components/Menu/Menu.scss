@@ -6,28 +6,35 @@
   margin-top: 0;
   margin-bottom: 0;
   height: inherit;
-  padding-top: 5rem;
   padding-bottom: 5rem;
-  max-height: calc(100% - 110px);
-  position: relative;
+  min-height: calc(100vh - 6rem);
+  height: auto;
+  position: absolute;
   transform: translateX(calc(-100%));
+  z-index: 100;
 }
 ul {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
-  li {
-    text-decoration: none;
-    list-style: none;
-    color: $base-white;
-    font-size: 1.8rem;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  .menu-link {
     padding: 1rem 3rem;
+    color: $base-light-beige;
+    font-size: 1.8rem;
+    border-top: 1px solid $base-light-beige;
+    a {
+      font-size: 1.8rem;
+      color: $base-light-beige;
+      text-decoration: none;
+      line-height: 5.734rem;
+    }
   }
 }
 .social-media-links-container {
   height: 10rem;
-  background-color: $hover-green;
+  background-color: $image-beige;
   width: 100%;
   position: absolute;
   bottom: 0;
