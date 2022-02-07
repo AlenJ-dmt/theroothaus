@@ -1,0 +1,45 @@
+@import "../../styles/colors.scss";
+
+.hero {
+  width: 100%;
+}
+.message {
+  height: auto;
+  width: 100%;
+  background-color: $base-dark-green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  .text-holder {
+    height: auto;
+    width: auto;
+    position: relative;
+    border: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    button {
+      width: 100%;
+      height: 5rem;
+      border: none;
+      outline: none;
+      background: $base-dar-button;
+      color: $base-white;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+  }
+}

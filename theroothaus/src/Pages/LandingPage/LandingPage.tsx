@@ -1,9 +1,12 @@
-import styles from "./LandingPage.module.scss"
-import { Hero } from "./Hero/Hero"
+import styles from "./LandingPage.module.scss";
+import { Hero } from "./Hero";
+import { Page } from "../../common/Page";
+import { NewArrivals } from "./NewArrivals";
 export const LandingPage = () => {
-    return (
-        <div className={styles.landing}>
-            <Hero />
-        </div>
-    )
-}
+  return (
+    <Page>
+      <Hero />
+      <NewArrivals />
+    </Page>
+  );
+};

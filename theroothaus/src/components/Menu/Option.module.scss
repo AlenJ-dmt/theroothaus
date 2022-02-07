@@ -1,0 +1,13 @@
+@import "../../styles/colors.scss";
+
+.link {
+  padding: 1rem 3rem;
+  color: $base-light-beige;
+  border-bottom: 1px solid $base-light-beige;
+  text-decoration: none;
+  &-option {
+    height: 6.5rem;
+    display: flex;
+    align-items: center;
+  }
+}

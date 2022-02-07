@@ -1,0 +1,22 @@
+@import "../../styles/colors.scss";
+
+.header-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 5;
+
+  .icons-container {
+    width: 7rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

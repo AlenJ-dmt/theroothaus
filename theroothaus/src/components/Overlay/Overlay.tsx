@@ -8,8 +8,7 @@ export const Overlay = () => {
     window.addEventListener("scroll", noscroll)
 
     return (
-        <div className={styles.overlay}>
-
+        <div className={styles.overlay}>  
         </div>
     )
 }

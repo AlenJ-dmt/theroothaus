@@ -1,0 +1,40 @@
+@import "../../styles/colors.scss";
+
+.nav-menu {
+  width: 100%;
+  background-color: $base-dark-green;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: inherit;
+  padding-bottom: 5rem;
+  min-height: calc(100vh);
+  height: auto;
+  position: absolute;
+  transform: translateX(calc(-100%));
+  z-index: 100;
+  padding-top: 60px;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.social-media-links-container {
+  height: 10rem;
+  background-color: $image-beige;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  display: flex;
+  align-items: end;
+  .container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+}
