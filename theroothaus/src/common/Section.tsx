@@ -7,8 +7,10 @@ interface ISectionProps {
 }
 
 export const Section: FC<ISectionProps> = ({ className, children }) => {
+
   return (
-    <section className={`${styles.section} ${styles[`${className}`]}`}>
+
+    <section className={`${styles.section} ${className}`}>
       {children}
     </section>
   );

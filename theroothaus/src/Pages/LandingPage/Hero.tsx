@@ -7,7 +7,7 @@ import { TrademarkIcon } from "../../common/icons/TrademarkIcon";
 
 export const Hero = () => {
   return (
-    <Section>
+    <Section className={styles.hero}>
       <img className={styles.hero} src={bg} />
       <div className={styles.message}>
         <div className={styles["text-holder"]}>

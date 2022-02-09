@@ -17,7 +17,7 @@ export const Typography: FC<ITypographyProps> = ({
   return (
     <span
       style={{
-        color: `${color} !important`,
+        color: `${color}`,
         textAlign: `${align ? align : "left"}`,
       }}
       className={`${styles.typography} ${styles[`typography-${type}`]}`}

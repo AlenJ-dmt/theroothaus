@@ -1,0 +1,14 @@
+.slider {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  &-container {
+    width: calc(100vw - 8rem);
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

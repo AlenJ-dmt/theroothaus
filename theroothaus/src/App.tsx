@@ -4,7 +4,7 @@ import Menu from "./components/Menu/index";
 import Header from "./components/Header/index";
 import HeaderMessage from "./components/HeaderMessage/HeaderMessage";
 import { Route, Routes } from "react-router-dom";
-import { LandingPage } from "./Pages/LandingPage/LandingPage";
+import { LandingPage } from "./Pages/LandingPage/index";
 import { DetailsPage } from "./Pages/DetailsPage/DetailsPage";
 import { Cart } from "./components/Cart/Cart";
 import { Overlay } from "./components/Overlay/Overlay";
